@@ -9,6 +9,8 @@
     --primary-color: #FFE100;        /* main yellow */
     --primary-dark: #000000;         /* dark / contrast */
     --primary-light: #FFF8B0;        /* soft yellow highlight */
+    --text-primary: #D97706;         /* dark orange for links/buttons */
+
 
     --secondary-color: #000000;      /* headings, strong text */
     --text-color: #000000;           /* main text */
@@ -78,5 +80,23 @@ h3 {
 }
 
 .text-primary {
-    color: var(--primary-color);
+    color: var(--text-primary);
 }
+
+.img-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;          /* minimalny “margines” wewnętrzny */
+  box-sizing: border-box;
+}
+
+.img-center img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 646px;
+  height: 210px;
+  object-fit: contain;       /* zachowuje proporcje */
+  display: block;
+}
+

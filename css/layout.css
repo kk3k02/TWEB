@@ -1,3 +1,22 @@
+.past-editions{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: stretch;
+}
+
+.past-edition{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: var(--bg-color);
+  border-radius: 0.375rem;
+  width: 100%;
+}
+
 /* Header Styles */
 header {
     background-color: var(--primary-color);
