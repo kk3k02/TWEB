@@ -1,47 +1,98 @@
+/*
+|==========================================================================
+| FOOTER STYLES
+|==========================================================================
+| Defines the layout, typography, and responsive behavior for the site footer.
+*/
+
 footer {
+  /* Colors & Background */
   background-color: var(--secondary-color);
   color: var(--white);
-  margin-top: 4rem;
+  
+  /* Spacing */
+  margin-top: 4rem; /* Top margin to separate from main content */
 }
 
 .footer-container {
+  /* Layout */
   max-width: 1200px;
   margin: 0 auto;
+  
+  /* Spacing & Padding */
   padding: 3rem 2rem;
 }
 
 .footer-grid {
+  /* Layout - Responsive Grid */
   display: grid;
+  /* Creates columns that fit automatically, minimum 200px wide */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+  /* Spacing */
   gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .footer-section h4 {
-  margin-bottom: 1rem;
+  /* Typography & Colors */
   color: var(--white);
+  
+  /* Spacing */
+  margin-bottom: 1rem;
 }
 
 .footer-section ul {
+  /* List Reset */
   list-style: none;
+  margin-left: 0; 
 }
 
 .footer-section li {
-  margin-bottom: 0.5rem;
+  /* Typography & Spacing */
   font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  
+  /* Visual */
   opacity: 0.8;
+}
+
+/* Link Styles (to remove default browser styling) */
+.footer-section a {
+  /* Typography & Color */
+  color: inherit; /* Inherits the white color from the parent footer */
+  text-decoration: none; /* Removes the underline/default blue color */
+  
+  /* Effects */
+  transition: opacity 0.2s;
+}
+
+.footer-section a:hover {
+  /* Effects */
+  opacity: 1; /* Slight hover effect for better visibility */
 }
 
 .footer-bottom {
+  /* Layout & Alignment */
   text-align: center;
+  
+  /* Spacing & Border */
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
+  
+  /* Typography & Visual */
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
+/*
+|--------------------------------------------------------------------------
+| MEDIA QUERIES
+|--------------------------------------------------------------------------
+*/
+
 @media (max-width: 768px) {
   .footer-container {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1rem; /* Adjust padding for smaller screens */
   }
 }
