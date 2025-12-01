@@ -17,30 +17,30 @@
 
   <div id="toast" class="toast"></div>
 
-  <header>
+  <header class="header">
     <div class="header-container">
-      <div class="logo">
-        <img class="logo-icon" src="../img/zolta_morda.png" alt="" />
+      <a href="index.html" class="logo">
+        <img class="logo-icon" src="../img/zolta_morda.png" alt="JP2 Congress Logo: Stylized portrait of Saint John Paul II" />
         <div class="logo-text">
-          <h1><b>Saint John Paul II 2026</b></h1>
-          <p>International Congress on the Life and Legacy of John Paul II</p>
+          <h1 class="logo-title">Saint John Paul II 2026</h1>
+          <p class="logo-subtitle">International Congress on the Life and Legacy of John Paul II</p>
         </div>
-      </div>
+      </a>
 
-      <nav id="mainNav">
-        <button class="nav-btn" onclick="location.href='../index.html'">Conference</button>
-        <button class="nav-btn active" onclick="location.href='program.html'">Program</button>
-        <button class="nav-btn" onclick="location.href='submission.html'">Paper Submission</button>
-        <button class="nav-btn" onclick="location.href='registration.html'">Registration</button>
-        <button class="nav-btn" onclick="location.href='membership.html'">Membership</button>
+      <nav id="mainNav" aria-label="Main conference navigation">
+        <a href="../index.html" class="nav-link active" aria-current="page">Conference</a>
+        <a href="program.html" class="nav-link">Program</a>
+        <a href="submission.html" class="nav-link">Paper Submission</a>
+        <a href="registration.html" class="nav-link">Registration</a>
+        <a href="membership.html" class="nav-link">Membership</a>
       </nav>
 
       <div class="auth-section">
-        <span id="userInfo" class="user-info" style="display:none;"></span>
-        <button id="authBtn" class="btn btn-primary" onclick="location.href='membership.html'">Login</button>
+        <span id="userInfo" class="user-info" style="display:none;" aria-live="polite"></span>
+        <a id="authBtn" href="membership.html" class="btn btn-primary">Login</a>
       </div>
 
-      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mainNav" onclick="toggleMobileMenu()">☰</button>
     </div>
   </header>
 
@@ -206,23 +206,23 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-section">
           <h4>Saint John Paul II 2026</h4>
-          <p style="font-size:0.9rem;">International Congress on the Life and Legacy of John Paul II</p>
-          <p style="font-size:0.9rem;margin-top:0.5rem;">October 16–19, 2026</p>
-          <p style="font-size:0.9rem;">Kraków, Poland</p>
+          <p class="footer-subtitle">International Congress on the Life and Legacy of John Paul II</p>
+          <p class="footer-date-loc">October 16–19, 2026</p>
+          <p class="footer-date-loc">Kraków, Poland</p>
         </div>
         <div class="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="../index.html" style="color:inherit;text-decoration:none;">Conference</a></li>
-            <li><a href="program.html" style="color:inherit;text-decoration:none;">Program</a></li>
-            <li><a href="submission.html" style="color:inherit;text-decoration:none;">Paper Submission</a></li>
-            <li><a href="registration.html" style="color:inherit;text-decoration:none;">Registration</a></li>
-            <li><a href="membership.html" style="color:inherit;text-decoration:none;">Membership</a></li>
+            <li><a href="../index.html">Conference</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="submission.html">Paper Submission</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="membership.html">Membership</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -234,14 +234,14 @@
             <li>Early Registration: September 1, 2026</li>
           </ul>
         </div>
-        <div class="footer-section">
+        <address class="footer-section">
           <h4>Contact Us</h4>
           <ul>
-            <li>info@jp2congress.org</li>
-            <li>+48 (12) 555 01 23</li>
+            <li><a href="mailto:info@jp2congress.org">info@jp2congress.org</a></li>
+            <li><a href="tel:+48125550123">+48 (12) 555 01 23</a></li>
             <li>John Paul II Center, Kraków</li>
           </ul>
-        </div>
+        </address>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 International Congress on Saint John Paul II. All rights reserved.</p>

@@ -167,3 +167,30 @@ function updateAuthUI(isLoggedIn, userName) {
     authBtn.textContent = 'Login';
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Pobierz wszystkie linki w nawigacji głównej
+    const navLinks = document.querySelectorAll('#mainNav .nav-link');
+    
+    // 2. Pobierz ścieżkę URL bieżącej strony
+    // Używamy pathname, aby uzyskać ścieżkę względną, np. "/html/program.html"
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        // Usuń klasę 'active' z każdego linku na początku
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+
+        // Ustal ścieżkę docelową linku
+        const linkPath = link.getAttribute('href');
+
+        // 3. Sprawdź, czy bieżąca ścieżka kończy się ścieżką linku
+        // Używamy .endsWith(), aby dopasować np. "/index.html" do "index.html" 
+        // oraz "/html/program.html" do "html/program.html".
+        if (currentPath.endsWith(linkPath) || (currentPath === '/' && linkPath === 'index.html')) {
+            // 4. Jeśli ścieżki się zgadzają, dodaj klasę 'active' i atrybut ARIA
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+    });
+});
