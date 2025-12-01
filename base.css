@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Brand palette */
+    --primary-color: #FFE100;        /* main yellow */
+    --primary-dark: #000000;         /* dark / contrast */
+    --primary-light: #FFF8B0;        /* soft yellow highlight */
+
+    --secondary-color: #000000;      /* headings, strong text */
+    --text-color: #000000;           /* main text */
+    --text-light: rgba(0, 0, 0, 0.65);
+
+    --bg-color: #FFFFFF;             /* page background */
+    --white: #FFFFFF;
+
+    --border-color: rgba(0, 0, 0, 0.12);
+
+    /* semantic colors – zostawione jako akcenty */
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.p-2 {
+    padding: 1rem;
+}
+
+.text-muted {
+    color: var(--text-light);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
